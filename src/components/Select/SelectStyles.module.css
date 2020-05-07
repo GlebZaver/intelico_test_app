@@ -1,0 +1,193 @@
+.selectsControl {
+	position: relative;
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.selectsControl:last-child {
+	margin-right: 0;
+}
+
+.select {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 34px;
+	margin-bottom: 2px;
+	padding: 0 0 0 5px;
+	border: 1px solid #dfdfe1;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.selectValue {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: max-content;
+	font-size: 13px;
+	color: #a0a09e;
+}
+
+.input {
+	display: flex;
+	flex: 1;
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.input::placeholder {
+	color: #a0a09e;
+}
+
+.optionsWrapper {
+	position: absolute;
+	top: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	max-height: 300px;
+	padding: 2px 0;
+	border: 1px solid #dfdfe1;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px 1px #dfdfe1;
+	background-color: #ffffff;
+	z-index: 1;
+	overflow: auto;
+}
+
+.options {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 30px;
+	padding-left: 10px;
+	font-size: 13px;
+	color: #a0a09e;
+	cursor: pointer;
+}
+
+.options:hover {
+	background-color: #dfdfe1;
+	color: #444d68;
+}
+
+.optionsAtive {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 30px;
+	padding-left: 10px;
+	font-size: 13px;
+	font-weight: bold;
+	background-color: #dfdfe1;
+	color: #444d68;
+	cursor: pointer;
+}
+
+.usersSummary {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 30px;
+	padding-left: 10px;
+	font-size: 13px;
+	color: #444d68;
+}
+
+.selectInputContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	min-height: 30px;
+	padding-left: 5px;
+	font-size: 13px;
+	border-bottom: 1px solid #dfdfe1;
+	background-color: #ffffff;
+	color: #444d68;
+	cursor: pointer;
+}
+
+.selectInput {
+	width: 100%;
+	border: none;
+	outline: none;
+}
+
+.searchIconContainer {
+	height: 12px;
+	margin-right: 5px;
+}
+
+.searchIcon {
+	height: 100%;
+}
+
+.arrowIconContainer {
+	height: 20px;
+	margin-right: 5px;
+}
+
+.arrowIconClose {
+	height: 100%;
+}
+
+.arrowIconOpen {
+	height: 100%;
+	transform: rotate(180deg);
+}
+
+.avatarContainer {
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+
+.avatarImg {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+@media (min-width: 480px) {
+	.selectsControl {
+		flex: 0 1 calc(50% - 15px);
+		min-width: 120px;
+		margin-right: 15px;
+	}
+
+	.selectsControl:nth-child(2n) {
+		margin-right: 0;
+	}
+}
+
+@media (min-width: 940px) {
+	.selectsControl {
+		min-width: 120px;
+		margin-right: 15px;
+		margin-bottom: 0;
+	}
+
+	.selectsControl:nth-child(2n) {
+		margin-right: 15px;
+	}
+}

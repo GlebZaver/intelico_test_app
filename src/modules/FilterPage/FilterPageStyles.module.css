@@ -1,0 +1,62 @@
+.filterPageWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	height: 100%;
+	padding: 20px 20px 20px 15px;
+	background-color: #f3f7fa;
+}
+
+.logoContainer {
+	height: 15px;
+	width: 15px;
+	margin: 10px 0 20px 0;
+}
+
+.pageTitle {
+	margin: 0;
+	color: #3e3e3e;
+}
+
+.logoImage {
+	height: 100%;
+	width: 100%;
+}
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+	height: min-content;
+	padding: 15px;
+	border: 1px solid #dfdfe1;
+	background-color: #ffffff;
+}
+
+.buttonWrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 10px;
+}
+
+@media (min-width: 940px) {
+	.buttonWrapper {
+		width: max-content;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 940px) {
+	.form {
+		flex-direction: row;
+		align-items: center;
+		justify-content: flex-start;
+	}
+}

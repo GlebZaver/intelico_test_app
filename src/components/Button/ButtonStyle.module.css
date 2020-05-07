@@ -1,0 +1,44 @@
+.buttonControl {
+	display: flex;
+	flex: 0 1 calc(50% - 15px);
+	width: 100%;
+	margin-right: 15px;
+}
+
+.buttonControl:last-child {
+	margin-right: 0;
+}
+
+.button {
+	width: 100%;
+	padding: 8px 0;
+	border: 1px solid #444d68;
+	border-radius: 5px;
+	background-color: #444d68;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+}
+
+.button:hover {
+	background-color: #525f8a;
+	transition: 0.3s ease-out;
+}
+
+.outlined {
+	width: 100%;
+	padding: 8px 0;
+	border: 1px solid #444d68;
+	border-radius: 5px;
+	background-color: #ffffff;
+	color: #444d68;
+	cursor: pointer;
+	outline: none;
+}
+
+@media (min-width: 940px) {
+	.buttonControl {
+		flex: none;
+		width: 70px;
+	}
+}
