@@ -6,12 +6,12 @@ export const textFieldsData = {
 	textfield3: {},
 };
 
-export const selectByuerOptions = [
-	"TestByuer 1",
-	"TestByuer 2",
-	"TestByuer 3",
-	"TestByuer 4",
-	"TestByuer 5",
+export const selectBuyerOptions = [
+	"TestBuyer 1",
+	"TestBuyer 2",
+	"TestBuyer 3",
+	"TestBuyer 4",
+	"TestBuyer 5",
 ];
 
 export const selectUsersOptions = ["Homer Simpson", "Bart Simpson"];

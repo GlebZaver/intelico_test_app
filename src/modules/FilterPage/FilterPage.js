@@ -3,7 +3,7 @@ import React from "react";
 import { TextFieldMap, Select, Button } from "components";
 import {
 	textFieldsData,
-	selectByuerOptions,
+	selectBuyerOptions,
 	selectUsersOptions,
 	selectAvatarData,
 } from "./formsData";
@@ -28,14 +28,14 @@ function FilterPage() {
 			<form className={styles.form} onSubmit={handleSubmit}>
 				<div className={classes.selectsWrapper}>
 					<Select
-						name="selectByuers"
-						placeholder="Select Byuers"
-						selectFieldsData={selectByuerOptions}
+						name="selectBuyers"
+						placeholder="Select buyer"
+						selectFieldsData={selectBuyerOptions}
 						withSearch
 					/>
 					<Select
 						name="selectUsers"
-						placeholder="Select Users"
+						placeholder="Select user"
 						selectFieldsData={selectUsersOptions}
 						withAvatar
 						avatarData={selectAvatarData}
